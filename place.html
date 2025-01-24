@@ -1,0 +1,65 @@
+<!-- author: owen-muhereza-kasule-wsedev -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Information about Kampala, Uganda">
+    <meta name="author" content="Lukwago Paul">
+    <title>Kampala, Uganda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Kampala, Uganda</h1>
+    </header>
+
+    <main>
+        <!-- Hero Section with srcset for responsive images -->
+        <div class="hero-section">
+            <picture>
+                <source srcset="images/Kampala-1min.webp" media="(max-width: 767px)">
+                <source srcset="images/Kampala-1.webp" media="(min-width: 768px)">
+                <img src="images/Kampala-1.webp" alt="Scenic view of Kampala City" class="hero-image">
+            </picture>
+        
+
+        <!-- Data Section -->
+            <section class="data-section card">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 189 sq km</li>
+                    <li><strong>Population:</strong> 1,650,800</li>
+                    <li><strong>Capital:</strong> Kampala</li>
+                    <li><strong>Languages:</strong> English, Luganda</li>
+                    <li><strong>Currency:</strong> Ugandan Shilling (UGX)</li>
+                    <li><strong>Time Zone:</strong> UTC+3</li>
+                    <li><strong>Calling Code:</strong> +256</li>
+                    <li><strong>Internet TLD:</strong> .ug</li>
+                </ul>
+            </section>
+
+            <!-- Weather Section -->
+            <section class="weather-section card">
+                <h2>Weather <span class="weather-icon">⛅</span></h2>
+                <img src="images/weather_icon.svg" alt="Weather Icon" class="mobile-weather-icon">
+                <ul>
+                    <li><strong>Temperature:</strong> <span id="temp">Loading...</span></li>
+                    <li><strong>Conditions:</strong> <span id="conditions">Loading...</span></li>
+                    <li><strong>Wind:</strong> <span id="wind-speed">Loading...</span></li>
+                    <li><strong>Wind Chill:</strong> <span id="wind-chill">N/A</span></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> | Lukwago Paul | Kampala, Uganda</p>
+        <p id="lastModified" class="header-highlight"></p>
+    </footer>
+</body>
+</html>
