@@ -1,0 +1,125 @@
+/* temples-large.css */
+
+/* Header adjustments for large screens */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+header h1 {
+    font-size: 2.5rem; /* Increased size for better readability on larger screens */
+    color: white;
+    margin: 0;
+}
+
+#menu-toggle {
+    display: none; /* Hide the hamburger menu button on larger screens */
+}
+
+/* Navigation - Horizontal layout for larger screens */
+#main-nav {
+    display: flex; /* Show navigation items in a row */
+    flex-direction: row;
+    gap: 2rem;
+    background-color: transparent;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ddd; /* Subtle hover effect for better interactivity */
+}
+
+/* Main content adjustments */
+main {
+    max-width: 1400px; /* Center and limit width on larger screens */
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* Gallery adjustments for multi-column layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dynamic column layout */
+    gap: 2rem; /* Increased gap for better spacing on larger screens */
+    max-width: 1200px; /* Restrict width for better alignment */
+    margin: 0 auto;
+}
+
+/* Card container adjustments */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    margin: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card image adjustments for uniform size */
+.card img {
+    width: 100%; /* Ensure image spans full card width */
+    height: 200px; /* Set fixed height for uniformity */
+    object-fit: cover; /* Maintain aspect ratio while filling the area */
+    border-bottom: 2px solid #ddd;
+    display: block;
+}
+
+/* Card caption styling */
+.card .caption {
+    padding: 1rem;
+    font-size: 1rem; /* Slightly larger for readability on large screens */
+    color: var(--text-color);
+}
+
+.card .caption h3 {
+    font-size: 1.5rem; /* Enhanced heading size for large screens */
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.card .caption p {
+    margin: 0.5rem 0; /* Increased spacing for better readability */
+    line-height: 1.5;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.875rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+footer span {
+    font-weight: bold;
+}
