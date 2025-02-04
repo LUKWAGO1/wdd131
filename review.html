@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Review Confirmation Page">
+    <meta name="author" content="Lukwago Paul">
+    <title>Review Confirmation</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+    
+    <main>
+        <div class="confirmation-container">
+            <p>Your review has been submitted successfully.</p>
+            <p>Total Reviews Submitted: <span id="reviewCount">0</span></p>
+            <a href="form.html">Submit Another Review</a>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Lukwago Paul | Mukono, Uganda</p>
+    </footer>
+    
+    <script>
+        // Update review count in localStorage
+        document.addEventListener("DOMContentLoaded", () => {
+            let reviewCount = localStorage.getItem("reviewCount") || 0;
+            reviewCount++;
+            localStorage.setItem("reviewCount", reviewCount);
+            document.getElementById("reviewCount").textContent = reviewCount;
+            document.getElementById("currentyear").textContent = new Date().getFullYear();
+        });
+    </script>
+</body>
+</html>
