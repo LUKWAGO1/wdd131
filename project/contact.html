@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact APV Riverside Grand Hotel - Reach out to us for bookings or inquiries">
+    <meta name="author" content="Lukwago Paul">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script defer src="scripts/scripts.js"></script>
+    <title>Contact Us - APV Riverside Grand Hotel</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/hotellog.webp" alt="APV Riverside Grand Hotel Logo">
+            </div>
+            <button class="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+				<a href="about.html" class="nav-link">About</a>
+				<a href="book.html" class="nav-link">book</a>
+				<a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <h1>Contact Us</h1>
+        <p>We're here to assist you with your reservations, inquiries, or special requests.</p>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-container">
+        <h2>Get in Touch</h2>
+        <form action="submit_form.php" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="contact-faq-container">
+            <div class="contact-faq-item">
+                <h3>What are your check-in/check-out times?</h3>
+                <p>Check-in time is 3:00 PM and check-out time is 12:00 PM. Early check-in and late check-out can be arranged upon request.</p>
+            </div>
+            <div class="contact-faq-item">
+                <h3>Do you offer airport transfers?</h3>
+                <p>Yes, we provide luxury airport transfer services. Please contact our concierge desk to arrange your transportation.</p>
+            </div>
+            <div class="contact-faq-item">
+                <h3>What amenities are included with my stay?</h3>
+                <p>All rooms include access to our pool, fitness center, spa facilities, and complimentary breakfast at our riverside restaurant.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-cta">
+            <p>Experience APV Riverside Grand Hotel.</p>
+            <ul>
+                <li>✓ Luxury Accommodation</li>
+                <li>✓ Fine Dining</li>
+                <li>✓ Premium Amenities</li>
+            </ul>
+            <div class="cta-buttons">
+                <a href="book.html" class="footer-btn btn-dark">Book Now →</a>
+                <a href="contact.html" class="footer-btn btn-light">Contact Us →</a>
+            </div>
+        </div>
+        <div class="footer-links">
+            <div class="footer-column">
+                <h4>Accommodations</h4>
+                <ul>
+                    <li><a href="#">Rooms & Suites</a></li>
+                    <li><a href="#">Special Offers</a></li>
+                    <li><a href="#">Group Bookings</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Facilities</h4>
+                <ul>
+                    <li><a href="#">Restaurants</a></li>
+                    <li><a href="#">Spa & Wellness</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Hotel</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="home.html">home</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-social-icons">
+            <a href="https://twitter.com" class="social-icon"><img src="images/twitter_icon.png" alt="Twitter"></a>
+			<a href="https://facebook.com" class="social-icon"><img src="images/facebook_icon.png" alt="Facebook"></a>
+			<a href="https://linkedin.com" class="social-icon"><img src="images/linkedin_icon.png" alt="LinkedIn"></a>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 APV Riverside Grand Hotel. All rights reserved. | Developed by Paul</p>
+            <p id="last-modified" class="last-modified"></p>
+        </div>
+    </footer>    
+</body>
+</html>

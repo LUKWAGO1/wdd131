@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Homepage for APV Riverside Grand Hotel">
+	<meta name="author" content="Lukwago Paul">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Liter:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/styles.css">
+	<script defer src="scripts/scripts.js"></script>
+	<title>APV Riverside Grand Hotel - Luxury Riverside Living</title>
+</head>
+<body>
+	<header>
+		<div class="navbar">
+			<div class="logo">
+				<img src="images/hotellog.webp" alt="APV Riverside Grand Hotel Logo">
+			</div>
+			<button class="menu-toggle" aria-label="Toggle navigation menu">&#9776;</button>
+			<nav class="nav-menu">
+				<a href="index.html" class="nav-link">Home</a>
+				<a href="about.html" class="nav-link">About</a>
+				<a href="book.html" class="nav-link">book</a>
+				<a href="contact.html" class="nav-link">Contact</a>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<!-- Updated Hero Section -->
+		<section class="hero">
+			<div class="hero-text">
+				<h1>Experience Riverside Luxury</h1>
+				<p>Indulge in sophisticated comfort with breathtaking views of the river.</p>
+				<div class="hero-buttons">
+					<a href="book.html" class="cta-button">Book Now</a>
+					<a href="about.html" class="cta-button secondary">Learn More</a>
+				</div>
+			</div>
+			<img src="images/outside.webp" alt="Hotel Exterior View" class="hero-image">
+		</section>
+
+		<!-- Reorganized Features Section -->
+		<section class="features">
+			<div class="section-header">
+				<h2>Welcome to Your Riverside Sanctuary</h2>
+				<p class="section-subtitle">Discover Our Premium Amenities</p>
+			</div>
+			<div class="feature-cards">
+				<div class="feature-card">
+					<img src="images/delux.webp" alt="Luxury Accommodation" class="feature-image">
+					<h3>Accommodation</h3>
+					<p>Luxurious rooms and suites with riverside views.</p>
+					<a href="#" class="read-more">View Rooms</a>
+				</div>
+				<div class="feature-card">
+					<img src="images/amenities.webp" alt="Fine Dining" class="feature-image">
+					<h3>Dining</h3>
+					<p>Fine dining restaurants with international cuisine.</p>
+					<a href="#" class="read-more">View Menu</a>
+				</div>
+				<div class="feature-card">
+					<img src="images/couple-spa.jpg" alt="Spa and Wellness" class="feature-image">
+					<h3>Wellness</h3>
+					<p>Spa, fitness center, and infinity pool facilities.</p>
+					<a href="#" class="read-more">Learn More</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Restructured Hotel Purpose Section -->
+		<section class="hotel-purpose">
+			<h2>Why Choose Us</h2>
+			<div class="purpose-content">
+				<div class="purpose-card">
+					<h3>Business Excellence</h3>
+					<p>Designed for corporate travelers, our state-of-the-art conference facilities and dedicated business center make APV Riverside the premier choice for professional gatherings in Kampala.</p>
+				</div>
+				
+				<div class="purpose-card">
+					<h3>Cultural Gateway</h3>
+					<p>Positioned in the heart of Kampala, we serve as your gateway to Uganda's rich cultural heritage, offering curated local experiences and traditional hospitality blended with modern luxury.</p>
+				</div>
+				
+				<div class="purpose-card">
+					<h3>Riverside Serenity</h3>
+					<p>Our unique location along the serene riverbanks provides a peaceful retreat within the city, featuring rooms with panoramic water views and outdoor dining experiences.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- New Quick Booking Widget -->
+		<section class="quick-booking">
+			<div class="booking-container">
+				<h3>Quick Reservation</h3>
+				<form id="quick-reservation-form" class="booking-form">
+					<div class="form-row">
+						<div class="form-group">
+							<label for="check-in">Check In</label>
+							<input type="date" id="check-in" name="check-in" required>
+						</div>
+						<div class="form-group">
+							<label for="check-out">Check Out</label>
+							<input type="date" id="check-out" name="check-out" required>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group">
+							<label for="guests">Guests</label>
+							<select id="guests" name="guests" required>
+								<option value="1">1 Guest</option>
+								<option value="2">2 Guests</option>
+								<option value="3">3 Guests</option>
+								<option value="4">4+ Guests</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="room-type">Room Type</label>
+							<select id="room-type" name="room-type" required>
+								<option value="standard">Standard Room</option>
+								<option value="deluxe">Deluxe Room</option>
+								<option value="suite">Executive Suite</option>
+							</select>
+						</div>
+					</div>
+					<button type="submit" class="submit-button">Check Availability</button>
+				</form>
+			</div>
+		</section>
+
+		<!-- Updated Guest Reviews Section -->
+		<section class="guest-reviews">
+			<div class="section-header">
+				<h2>What Our Guests Say</h2>
+				<p class="section-subtitle">Experiences from our valued guests</p>
+			</div>
+			<div class="reviews-container" id="reviews-container">
+				<!-- Reviews loaded dynamically via JavaScript -->
+			</div>
+		</section>
+
+		<!-- Updated Quick Info Section -->
+		<section class="quick-info">
+			<div class="info-grid">
+				<div class="info-card">
+					<i class="fas fa-phone-alt"></i>
+					<h5>Direct Booking</h5>
+					<p>+256 742-944-709</p>
+				</div>
+				<div class="info-card">
+					<i class="fas fa-envelope"></i>
+					<h5>Email Reservations</h5>
+					<p>reservations@apvriverside.com</p>
+				</div>
+				<div class="info-card">
+					<i class="fas fa-map-marker-alt"></i>
+					<h5>Location</h5>
+					<p>244 Riverside Drive, Kampala</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="footer-cta">
+			<p>Experience APV Riverside Grand Hotel.</p>
+			<ul>
+				<li>✓ Luxury Accommodation</li>
+				<li>✓ Fine Dining</li>
+				<li>✓ Premium Amenities</li>
+			</ul>
+			<div class="cta-buttons">
+				<a href="book.html" class="footer-btn btn-dark">Book Now →</a>
+				<a href="contact.html" class="footer-btn btn-light">Contact Us →</a>
+			</div>
+		</div>
+		<div class="footer-links">
+			<div class="footer-column">
+				<h4>Accommodations</h4>
+				<ul>
+					<li><a href="#">Rooms & Suites</a></li>
+					<li><a href="#">Special Offers</a></li>
+					<li><a href="#">Group Bookings</a></li>
+				</ul>
+			</div>
+			<div class="footer-column">
+				<h4>Facilities</h4>
+				<ul>
+					<li><a href="#">Restaurants</a></li>
+					<li><a href="#">Spa & Wellness</a></li>
+					<li><a href="#">Events</a></li>
+				</ul>
+			</div>
+			<div class="footer-column">
+				<h4>Hotel</h4>
+				<ul>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li><a href="index.html">home</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="footer-social-icons">
+			<a href="https://twitter.com" class="social-icon"><img src="images/twitter_icon.png" alt="Twitter"></a>
+			<a href="https://facebook.com" class="social-icon"><img src="images/facebook_icon.png" alt="Facebook"></a>
+			<a href="https://linkedin.com" class="social-icon"><img src="images/linkedin_icon.png" alt="LinkedIn"></a>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy; 2024 APV Riverside Grand Hotel. All rights reserved.| Developed by Paul</p>
+			<p id="last-modified" class="last-modified"></p>
+		</div>
+	</footer>    
+	<!-- Add this before closing body tag -->
+	<button id="scroll-to-top" aria-label="Scroll to top">
+		<i class="fas fa-arrow-up"></i>
+	</button>
+</body>
+</html>
