@@ -154,9 +154,11 @@ main {
     border-radius: 5px; /* Rounded corners for hover effect */
     transition: all 0.5s ease-in-out; /* Smooth transition for hover movement */
     opacity: 0; /* Initially invisible */
-    pointer-events: none;
-    -webkit-pointer-events: none;
-    -moz-pointer-events: none;
+    visibility: hidden; /* Replace pointer-events */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     z-index: 0; /* Place behind navigation links */
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -1996,6 +1998,17 @@ textarea:focus {
 .fa-solid, .fa-thin, .fab, .fad, .fal, .far, .fas, .fat {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Remove text-rendering property */
+}
+
+/* Fix Font Awesome animations */
+.fa-beat, .fa-bounce, .fa-beat-fade, .fa-fade, 
+.fa-flip, .fa-shake, .fa-spin {
+    animation-delay: 0s; /* Standard value instead of var */
+}
+
+.fa-rotate-by {
+    transform: rotate(0); /* Standard value instead of var */
 }
 
 /* Fix Font Awesome animations */
