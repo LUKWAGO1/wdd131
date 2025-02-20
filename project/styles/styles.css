@@ -162,6 +162,7 @@ main {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    -webkit-touch-callout: none;
 }
 
 /* Hamburger menu only for smaller screens */
@@ -662,6 +663,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-form .form-group input::placeholder,
 .contact-form .form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.8);
     color: var(--color-input-placeholder);
 }
 
@@ -1855,6 +1857,12 @@ textarea:focus {
     opacity: 1;
 }
 
+/* Fix form placeholder styles */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.8); /* Fallback color */
+}
+
 /* Media query adjustments for better mobile contrast */
 @media screen and (max-width: 768px) {
     select,
@@ -1981,6 +1989,39 @@ textarea:focus {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+}
+
+/* Fix Font Awesome styles */
+.fa, .fa-brands, .fa-duotone, .fa-light, .fa-regular, .fa-solid, .fa-thin, .fab, .fad, .fal, .far, .fas, .fat {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fix Font Awesome animations with standard values */
+.fa-beat, .fa-bounce, .fa-beat-fade, .fa-fade, .fa-flip, .fa-shake, .fa-spin {
+    animation-delay: 0s;
+}
+
+/* Fix pointer-events */
+.hover-effect {
+    /* ...existing code... */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    pointer-events: none;
+}
+
+.fa-rotate-by {
+    transform: rotate(0deg);
+}
+
+/* Fix testimonial heading color */
+.testimonial h4 {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #2c3e50; /* Fallback color */
 }
 
 /* Fix Font Awesome animation delays with fallbacks */
