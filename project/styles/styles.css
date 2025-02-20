@@ -1,3 +1,4 @@
+
 :root {
     --font-primary: 'Liter', serif;
     --font-heading: 'Poppins', sans-serif;
@@ -1214,6 +1215,69 @@ h1, h2, h3, h4, h5, h6 {
 /* ==============================
    Programs Page Highlights Section
 ============================== */
+.programs-highlights {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: var(--color-background);
+}
+
+.program-grid {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.program-card {
+    background-color: var(--color-card-bg);
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.program-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.program-card h3 {
+    margin: 1rem 0;
+    font-size: 1.3rem;
+    color: var(--color-accent);
+}
+
+/* ==============================
+   Testimonials Section
+============================== */
+.testimonials {
+    background-color: var(--color-secondary);
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.testimonial {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial h4 {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #2c3e50; /* Fallback color */
+    color: var(--color-text-dark); /* Using correct variable name */
+}
 
 /* ==============================
    Video Section
@@ -1933,17 +1997,15 @@ textarea:focus {
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Fix Font Awesome animations with fallbacks */
+/* Fix Font Awesome animations */
 .fa-beat, .fa-bounce, .fa-beat-fade, .fa-fade, 
 .fa-flip, .fa-shake, .fa-spin {
-    animation-delay: 0s; /* Standard fallback */
+    animation-delay: 0s;
 }
 
 .fa-rotate-by {
-    transform: rotate(0); /* Standard fallback */
+    transform: rotate(0);
 }
-
-/* Remove duplicate Font Awesome styles */
 
 /* Fix Font Awesome animations */
 .fa-beat, .fa-bounce, .fa-beat-fade, .fa-fade, 
