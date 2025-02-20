@@ -1525,10 +1525,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1rem;
     transition: all 0.3s ease;
 }
-
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: var (--color-input-placeholder);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .form-group input:focus,
@@ -1757,7 +1756,7 @@ h1, h2, h3, h4, h5, h6 {
    Mission Section
 ============================== */
 .mission-section {
-    background-color: #1a1a1a; /* Very dark gray background */
+    background-color: #1a1a1a;
     padding: 4rem 2rem;
     position: relative;
     color: var(--color-text-light);
@@ -1797,11 +1796,11 @@ h1, h2, h3, h4, h5, h6 {
 .mission-section p {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #e0e0e0; /* Light gray text for better readability */
+    color: #e0e0e0;
     text-align: justify;
     margin-bottom: 1.5rem;
     padding: 0 1rem;
-    white-space: pre-line; /* Preserves paragraph breaks */
+    white-space: pre-line;
 }
 
 /* Responsive Design */
@@ -1863,7 +1862,7 @@ textarea:focus {
 /* Fix form placeholder styles */
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: rgba(255, 255, 255, 0.8); /* Fallback color */
+    color: rgba(255, 255, 255, 0.8);
 }
 
 /* Media query adjustments for better mobile contrast */
@@ -1871,7 +1870,7 @@ textarea:focus {
     select,
     input,
     textarea {
-        font-size: 16px; /* Prevents zoom on mobile */
+        font-size: 16px;
         background-color: var(--color-input-bg);
     }
 
@@ -1998,17 +1997,16 @@ textarea:focus {
 .fa-solid, .fa-thin, .fab, .fad, .fal, .far, .fas, .fat {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    /* Remove text-rendering property */
 }
 
 /* Fix Font Awesome animations */
 .fa-beat, .fa-bounce, .fa-beat-fade, .fa-fade, 
 .fa-flip, .fa-shake, .fa-spin {
-    animation-delay: 0s; /* Standard value instead of var */
+    animation-delay: 0s;
 }
 
 .fa-rotate-by {
-    transform: rotate(0); /* Standard value instead of var */
+    transform: rotate(0);
 }
 
 /* Fix Font Awesome animations */
@@ -2035,18 +2033,8 @@ textarea:focus {
 .testimonial h4 {
     margin-top: 1rem;
     font-size: 1rem;
-    color: #2c3e50; /* Fallback color */
+    color: #2c3e50;
 }
 
 /* Fix Font Awesome animation delays with fallbacks */
-.fa-beat, .fa-bounce, .fa-beat-fade, .fa-fade, .fa-flip, .fa-shake, .fa-spin {
-    -webkit-animation-delay: 0s;
-    animation-delay: 0s;
-    animation-delay: var(--fa-animation-delay, 0);
-}
-
-.fa-rotate-by {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-    transform: rotate(var(--fa-rotate-angle, 0deg));
-}
+.fa-
