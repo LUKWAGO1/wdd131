@@ -1,6 +1,4 @@
-/* ==============================
-   Global Variables
-============================== */
+
 :root {
     --font-primary: 'Liter', serif;
     --font-heading: 'Poppins', sans-serif;
@@ -154,8 +152,18 @@ main {
     border-radius: 5px; /* Rounded corners for hover effect */
     transition: all 0.5s ease-in-out; /* Smooth transition for hover movement */
     opacity: 0; /* Initially invisible */
-    pointer-events: none;
+    visibility: hidden; /* Replace pointer-events */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     z-index: 0; /* Place behind navigation links */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    visibility: hidden;
 }
 
 /* Hamburger menu only for smaller screens */
@@ -656,6 +664,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-form .form-group input::placeholder,
 .contact-form .form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.8);
     color: var(--color-input-placeholder);
 }
 
@@ -1266,7 +1275,8 @@ h1, h2, h3, h4, h5, h6 {
 .testimonial h4 {
     margin-top: 1rem;
     font-size: 1rem;
-    color: var (--color-text);
+    color: #2c3e50; /* Fallback color */
+    color: var(--color-text-dark); /* Using correct variable name */
 }
 
 /* ==============================
@@ -1513,10 +1523,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1rem;
     transition: all 0.3s ease;
 }
-
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: var(--color-input-placeholder);
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .form-group input:focus,
@@ -1745,7 +1754,7 @@ h1, h2, h3, h4, h5, h6 {
    Mission Section
 ============================== */
 .mission-section {
-    background-color: #1a1a1a; /* Very dark gray background */
+    background-color: #1a1a1a;
     padding: 4rem 2rem;
     position: relative;
     color: var(--color-text-light);
@@ -1785,11 +1794,11 @@ h1, h2, h3, h4, h5, h6 {
 .mission-section p {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #e0e0e0; /* Light gray text for better readability */
+    color: #e0e0e0;
     text-align: justify;
     margin-bottom: 1.5rem;
     padding: 0 1rem;
-    white-space: pre-line; /* Preserves paragraph breaks */
+    white-space: pre-line;
 }
 
 /* Responsive Design */
@@ -1848,12 +1857,18 @@ textarea:focus {
     opacity: 1;
 }
 
+/* Fix form placeholder styles */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 /* Media query adjustments for better mobile contrast */
 @media screen and (max-width: 768px) {
     select,
     input,
     textarea {
-        font-size: 16px; /* Prevents zoom on mobile */
+        font-size: 16px;
         background-color: var(--color-input-bg);
     }
 
@@ -1968,3 +1983,54 @@ textarea:focus {
 .info-card:hover {
     transform: translateY(-10px);
 }
+
+/* Add vendor prefixes for Font Awesome animations */
+.fa, .fa-brands, .fa-duotone, .fa-light, .fa-regular, .fa-solid, .fa-thin, .fab, .fad, .fal, .far, .fas, .fat {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fix Font Awesome styles */
+.fa, .fa-brands, .fa-duotone, .fa-light, .fa-regular, 
+.fa-solid, .fa-thin, .fab, .fad, .fal, .far, .fas, .fat {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Fix Font Awesome animations */
+.fa-beat, .fa-bounce, .fa-beat-fade, .fa-fade, 
+.fa-flip, .fa-shake, .fa-spin {
+    animation-delay: 0s;
+}
+
+.fa-rotate-by {
+    transform: rotate(0);
+}
+
+/* Fix Font Awesome animations */
+.fa-beat, .fa-bounce, .fa-beat-fade, .fa-fade, 
+.fa-flip, .fa-shake, .fa-spin {
+    animation-delay: 0s;
+}
+
+.fa-rotate-by {
+    transform: rotate(0deg);
+}
+
+/* Fix pointer-events */
+.hover-effect {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    visibility: hidden;
+}
+
+/* Fix testimonial heading color */
+.testimonial h4 {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #2c3e50;
+}
+
